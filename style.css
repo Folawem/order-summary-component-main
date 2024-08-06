@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+
+
+html{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    
+    /*### Neutral*/
+    
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    
+}
+
+
+
+body{
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    width: 310px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    border-radius: 14px;
+    padding-bottom: 12px;
+}
+
+
+main #illustration-hero {
+    width: 100%; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px;
+}
+#illustration-hero{
+    width: 100%;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+#p1{
+    width: 250px;
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+
+#annual-plan{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#AP{
+    font-weight: 500;
+    font-weight: bold;
+}
+
+#bg{
+background-color:var(--Very-pale-blue);
+/* height: 70px; */
+width: 80%;
+margin-inline: auto;
+display: flex;
+justify-content: space-evenly;
+padding-top: 12px;
+padding-right: 4px;
+border-radius: 12px;
+margin-bottom: 25px;
+}
+#flex{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+a{
+    align-self: center;
+}
+button{
+    width: 80%;
+    height: 40px;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    box-shadow: 0px 4px 3px var(--Bright-blue);
+    margin-bottom: 23px;
+    cursor: pointer;
+}
+
+#cancel_order{
+    text-align: center;
+    cursor: pointer;
+    /* width: 30px; */
+    font-weight: 500;
+}
+
+@media screen and (width > 640px){
+    body{
+        background-image: url("./images/pattern-background-desktop.svg");
+    }
+    
+}
